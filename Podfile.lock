@@ -1,0 +1,20 @@
+PODS:
+  - iOSH264Compression (1.0.0)
+  - mobile-ffmpeg-full-gpl (4.3.1)
+
+DEPENDENCIES:
+  - iOSH264Compression
+  - mobile-ffmpeg-full-gpl
+
+SPEC REPOS:
+  trunk:
+    - iOSH264Compression
+    - mobile-ffmpeg-full-gpl
+
+SPEC CHECKSUMS:
+  iOSH264Compression: 840f43bec7af884d2ad9b162842df78144f63859
+  mobile-ffmpeg-full-gpl: bb4b4d5f6ca5ecc1c9e60e51dc8cc869149f1ba7
+
+PODFILE CHECKSUM: 1b00e6a0f16003e50a0923b0bfc8b46429d019cc
+
+COCOAPODS: 1.10.1

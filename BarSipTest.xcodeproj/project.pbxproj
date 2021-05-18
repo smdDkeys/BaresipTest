@@ -1,0 +1,1573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0267A3B261AFA3500623403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0267A3A261AFA3500623403 /* AppDelegate.swift */; };
+		B0267A3D261AFA3500623403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0267A3C261AFA3500623403 /* SceneDelegate.swift */; };
+		B0267A3F261AFA3500623403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0267A3E261AFA3500623403 /* ViewController.swift */; };
+		B0267A42261AFA3500623403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0267A40261AFA3500623403 /* Main.storyboard */; };
+		B0267A44261AFA3900623403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0267A43261AFA3900623403 /* Assets.xcassets */; };
+		B0267A47261AFA3900623403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0267A45261AFA3900623403 /* LaunchScreen.storyboard */; };
+		B026838E261B0C5500623403 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0268384261B0BE300623403 /* AudioToolbox.framework */; };
+		B0268391261B0C5600623403 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0268386261B0BF600623403 /* AVFoundation.framework */; };
+		B0268393261B0C5700623403 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026838A261B0C1500623403 /* CFNetwork.framework */; };
+		B0268397261B0C5A00623403 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0268388261B0C0000623403 /* CoreVideo.framework */; };
+		B0268399261B0C5D00623403 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026838C261B0C5300623403 /* SystemConfiguration.framework */; };
+		B0CE7EED264EC86300230476 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CE7EEC264EC86300230476 /* OpenGLES.framework */; };
+		B0CE7F1D2652953000230476 /* Pods_BarSipTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F7D3C9D7C5582271D58174 /* Pods_BarSipTest.framework */; };
+		B0CE7F1E2652953000230476 /* Pods_BarSipTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14F7D3C9D7C5582271D58174 /* Pods_BarSipTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CE7F2626529B7C00230476 /* libbaresip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4576F261B44A900609B43 /* libbaresip.a */; };
+		B0CE7F2726529B7C00230476 /* libre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D45770261B44B500609B43 /* libre.a */; };
+		B0CE7F2826529B7C00230476 /* librem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D45772261B44CC00609B43 /* librem.a */; };
+		B0CE7F392653C7E200230476 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CE7F382653C7E200230476 /* QuartzCore.framework */; };
+		B0D44534261B360F00609B43 /* MytestFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D44533261B360F00609B43 /* MytestFile.m */; };
+		B0D44E4E261B426700609B43 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B026839C261B0CA700623403 /* libresolv.9.tbd */; };
+		B0D44E51261B431600609B43 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D44E50261B430F00609B43 /* libc++.tbd */; };
+		B0D45767261B43EB00609B43 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D45766261B43EA00609B43 /* CoreMedia.framework */; };
+		B0D45F3F2628399300609B43 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D45F3E2628398900609B43 /* libresolv.tbd */; };
+		B0D45F5B26283FEB00609B43 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D45F5A26283FE400609B43 /* libz.tbd */; };
+		B0D45F69262843AD00609B43 /* libSystem.B.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D45F68262843A400609B43 /* libSystem.B.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0CE7F1F2652953000230476 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0CE7F1E2652953000230476 /* Pods_BarSipTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14F7D3C9D7C5582271D58174 /* Pods_BarSipTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarSipTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16905646BE8628F8C6F433AC /* Pods-BarSipTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarSipTest.debug.xcconfig"; path = "Target Support Files/Pods-BarSipTest/Pods-BarSipTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B0267A37261AFA3400623403 /* BarSipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarSipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0267A3A261AFA3500623403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0267A3C261AFA3500623403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0267A3E261AFA3500623403 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0267A41261AFA3500623403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0267A43261AFA3900623403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0267A46261AFA3900623403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0267A48261AFA3900623403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0268382261B0BDC00623403 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B0268384261B0BE300623403 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B0268386261B0BF600623403 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B0268388261B0C0000623403 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B026838A261B0C1500623403 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B026838C261B0C5300623403 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B026839C261B0CA700623403 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		B0638B2C264D57F7005030FA /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../my/libavfilter.a; sourceTree = "<group>"; };
+		B0638B2D264D57F7005030FA /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../my/libavcodec.a; sourceTree = "<group>"; };
+		B0638B2E264D57F7005030FA /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../my/libavformat.a; sourceTree = "<group>"; };
+		B0638B2F264D57F7005030FA /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = ../my/libpostproc.a; sourceTree = "<group>"; };
+		B0638B30264D57F7005030FA /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../my/libswresample.a; sourceTree = "<group>"; };
+		B0638B31264D57F7005030FA /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../my/libavdevice.a; sourceTree = "<group>"; };
+		B0638B32264D57F7005030FA /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../my/libavutil.a; sourceTree = "<group>"; };
+		B0638B33264D57F7005030FA /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../my/libavresample.a; sourceTree = "<group>"; };
+		B0638B34264D57F7005030FA /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../my/libswscale.a; sourceTree = "<group>"; };
+		B0ABF61C264D0E9300B9D84D /* iOSH264Compression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSH264Compression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0ABF621264D11F300B9D84D /* libdecoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdecoder.a; sourceTree = "<group>"; };
+		B0ABF622264D11F300B9D84D /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopenh264.a; sourceTree = "<group>"; };
+		B0ABF623264D11F300B9D84D /* libprocessing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprocessing.a; sourceTree = "<group>"; };
+		B0ABF624264D11F300B9D84D /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommon.a; sourceTree = "<group>"; };
+		B0ABF625264D11F300B9D84D /* libencoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libencoder.a; sourceTree = "<group>"; };
+		B0ABF635264D130000B9D84D /* libprocessing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprocessing.a; path = "../сборка openh264/arm64/libprocessing.a"; sourceTree = "<group>"; };
+		B0ABF636264D130000B9D84D /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon.a; path = "../сборка openh264/arm64/libcommon.a"; sourceTree = "<group>"; };
+		B0ABF637264D130000B9D84D /* libdecoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdecoder.a; path = "../сборка openh264/arm64/libdecoder.a"; sourceTree = "<group>"; };
+		B0ABF638264D130000B9D84D /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopenh264.a; path = "../сборка openh264/arm64/libopenh264.a"; sourceTree = "<group>"; };
+		B0ABF639264D130000B9D84D /* libencoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libencoder.a; path = "../сборка openh264/arm64/libencoder.a"; sourceTree = "<group>"; };
+		B0CE7EEC264EC86300230476 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B0CE7F292652A2F100230476 /* SDL2 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SDL2; path = ../sdl/Versions/A/SDL2; sourceTree = "<group>"; };
+		B0CE7F382653C7E200230476 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B0CE7F3A2653C8ED00230476 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B0CE7F3F2653C9E100230476 /* BarSipTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarSipTest.entitlements; sourceTree = "<group>"; };
+		B0D44532261B360F00609B43 /* BarSipTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BarSipTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0D44533261B360F00609B43 /* MytestFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MytestFile.m; sourceTree = "<group>"; };
+		B0D44E50261B430F00609B43 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B0D45766261B43EA00609B43 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B0D45769261B440E00609B43 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		B0D4576F261B44A900609B43 /* libbaresip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbaresip.a; path = contrib/fat/lib/libbaresip.a; sourceTree = "<group>"; };
+		B0D45770261B44B500609B43 /* libre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libre.a; path = contrib/fat/lib/libre.a; sourceTree = "<group>"; };
+		B0D45772261B44CC00609B43 /* librem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librem.a; path = contrib/fat/lib/librem.a; sourceTree = "<group>"; };
+		B0D45F3E2628398900609B43 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B0D45F4D26283DB600609B43 /* librem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librem.a; sourceTree = "<group>"; };
+		B0D45F4E26283DB600609B43 /* libbaresip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaresip.a; sourceTree = "<group>"; };
+		B0D45F4F26283DB600609B43 /* libre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libre.a; sourceTree = "<group>"; };
+		B0D45F5A26283FE400609B43 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B0D45F5D26283FF500609B43 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		B0D45F5E2628401200609B43 /* libbaresip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbaresip.a; path = contrib/armv7/lib/libbaresip.a; sourceTree = "<group>"; };
+		B0D45F602628403100609B43 /* libre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libre.a; path = contrib/armv7/lib/libre.a; sourceTree = "<group>"; };
+		B0D45F622628405200609B43 /* librem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librem.a; path = contrib/armv7/lib/librem.a; sourceTree = "<group>"; };
+		B0D45F642628407100609B43 /* libre.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libre.dylib; path = contrib/armv7/lib/libre.dylib; sourceTree = "<group>"; };
+		B0D45F68262843A400609B43 /* libSystem.B.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.B.tbd; path = usr/lib/libSystem.B.tbd; sourceTree = SDKROOT; };
+		B0D45F752628450C00609B43 /* librem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librem.a; path = contrib/x86_64/lib/librem.a; sourceTree = "<group>"; };
+		BE3BA3244CFDFF37E618D764 /* Pods-BarSipTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarSipTest.release.xcconfig"; path = "Target Support Files/Pods-BarSipTest/Pods-BarSipTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0267A34261AFA3400623403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CE7F2726529B7C00230476 /* libre.a in Frameworks */,
+				B0CE7F1D2652953000230476 /* Pods_BarSipTest.framework in Frameworks */,
+				B0CE7F392653C7E200230476 /* QuartzCore.framework in Frameworks */,
+				B0CE7F2826529B7C00230476 /* librem.a in Frameworks */,
+				B0D45F69262843AD00609B43 /* libSystem.B.tbd in Frameworks */,
+				B0268393261B0C5700623403 /* CFNetwork.framework in Frameworks */,
+				B0D44E51261B431600609B43 /* libc++.tbd in Frameworks */,
+				B0268391261B0C5600623403 /* AVFoundation.framework in Frameworks */,
+				B0D44E4E261B426700609B43 /* libresolv.9.tbd in Frameworks */,
+				B026838E261B0C5500623403 /* AudioToolbox.framework in Frameworks */,
+				B0268399261B0C5D00623403 /* SystemConfiguration.framework in Frameworks */,
+				B0D45767261B43EB00609B43 /* CoreMedia.framework in Frameworks */,
+				B0CE7EED264EC86300230476 /* OpenGLES.framework in Frameworks */,
+				B0CE7F2626529B7C00230476 /* libbaresip.a in Frameworks */,
+				B0268397261B0C5A00623403 /* CoreVideo.framework in Frameworks */,
+				B0D45F3F2628399300609B43 /* libresolv.tbd in Frameworks */,
+				B0D45F5B26283FEB00609B43 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C14D0ABDDE308D128B2D87D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16905646BE8628F8C6F433AC /* Pods-BarSipTest.debug.xcconfig */,
+				BE3BA3244CFDFF37E618D764 /* Pods-BarSipTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0267A2E261AFA3400623403 = {
+			isa = PBXGroup;
+			children = (
+				B0267A39261AFA3400623403 /* BarSipTest */,
+				B0267A38261AFA3400623403 /* Products */,
+				B0268381261B0BDB00623403 /* Frameworks */,
+				7C14D0ABDDE308D128B2D87D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B0267A38261AFA3400623403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0267A37261AFA3400623403 /* BarSipTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0267A39261AFA3400623403 /* BarSipTest */ = {
+			isa = PBXGroup;
+			children = (
+				B0CE7F3F2653C9E100230476 /* BarSipTest.entitlements */,
+				B0267A3A261AFA3500623403 /* AppDelegate.swift */,
+				B0267A3C261AFA3500623403 /* SceneDelegate.swift */,
+				B0267A3E261AFA3500623403 /* ViewController.swift */,
+				B0267A40261AFA3500623403 /* Main.storyboard */,
+				B0267A43261AFA3900623403 /* Assets.xcassets */,
+				B0267A45261AFA3900623403 /* LaunchScreen.storyboard */,
+				B0267A48261AFA3900623403 /* Info.plist */,
+				B0D44533261B360F00609B43 /* MytestFile.m */,
+				B0D44532261B360F00609B43 /* BarSipTest-Bridging-Header.h */,
+			);
+			path = BarSipTest;
+			sourceTree = "<group>";
+		};
+		B0268381261B0BDB00623403 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0CE7F3A2653C8ED00230476 /* SDL2.framework */,
+				B0CE7F382653C7E200230476 /* QuartzCore.framework */,
+				B0CE7F292652A2F100230476 /* SDL2 */,
+				B0CE7EEC264EC86300230476 /* OpenGLES.framework */,
+				B0638B2D264D57F7005030FA /* libavcodec.a */,
+				B0638B31264D57F7005030FA /* libavdevice.a */,
+				B0638B2C264D57F7005030FA /* libavfilter.a */,
+				B0638B2E264D57F7005030FA /* libavformat.a */,
+				B0638B33264D57F7005030FA /* libavresample.a */,
+				B0638B32264D57F7005030FA /* libavutil.a */,
+				B0638B2F264D57F7005030FA /* libpostproc.a */,
+				B0638B30264D57F7005030FA /* libswresample.a */,
+				B0638B34264D57F7005030FA /* libswscale.a */,
+				B0ABF636264D130000B9D84D /* libcommon.a */,
+				B0ABF637264D130000B9D84D /* libdecoder.a */,
+				B0ABF639264D130000B9D84D /* libencoder.a */,
+				B0ABF638264D130000B9D84D /* libopenh264.a */,
+				B0ABF635264D130000B9D84D /* libprocessing.a */,
+				B0ABF620264D11F300B9D84D /* armv7 */,
+				B0ABF61C264D0E9300B9D84D /* iOSH264Compression.framework */,
+				B0D45F752628450C00609B43 /* librem.a */,
+				B0D45F68262843A400609B43 /* libSystem.B.tbd */,
+				B0D45F642628407100609B43 /* libre.dylib */,
+				B0D45F622628405200609B43 /* librem.a */,
+				B0D45F602628403100609B43 /* libre.a */,
+				B0D45F5E2628401200609B43 /* libbaresip.a */,
+				B0D45F5D26283FF500609B43 /* libz.1.tbd */,
+				B0D45F5A26283FE400609B43 /* libz.tbd */,
+				B0D45F4C26283DB600609B43 /* lib */,
+				B0D45F3E2628398900609B43 /* libresolv.tbd */,
+				B0D45772261B44CC00609B43 /* librem.a */,
+				B0D45770261B44B500609B43 /* libre.a */,
+				B0D4576F261B44A900609B43 /* libbaresip.a */,
+				B0D45769261B440E00609B43 /* libc++.1.tbd */,
+				B0D45766261B43EA00609B43 /* CoreMedia.framework */,
+				B0D44E50261B430F00609B43 /* libc++.tbd */,
+				B026839D261B0CD900623403 /* baresip */,
+				B026839C261B0CA700623403 /* libresolv.9.tbd */,
+				B026838C261B0C5300623403 /* SystemConfiguration.framework */,
+				B026838A261B0C1500623403 /* CFNetwork.framework */,
+				B0268388261B0C0000623403 /* CoreVideo.framework */,
+				B0268386261B0BF600623403 /* AVFoundation.framework */,
+				B0268384261B0BE300623403 /* AudioToolbox.framework */,
+				B0268382261B0BDC00623403 /* CoreAudio.framework */,
+				14F7D3C9D7C5582271D58174 /* Pods_BarSipTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B026839D261B0CD900623403 /* baresip */ = {
+			isa = PBXGroup;
+			children = (
+				B026839E261B0CD900623403 /* test */,
+				B02683A1261B0CD900623403 /* debian */,
+				B02683A3261B0CD900623403 /* include */,
+				B02683A4261B0CD900623403 /* docs */,
+				B02683A6261B0CD900623403 /* mk */,
+				B02683A8261B0CD900623403 /* .github */,
+				B02683AA261B0CD900623403 /* modules */,
+				B026840A261B0CD900623403 /* share */,
+				B026840B261B0CD900623403 /* src */,
+			);
+			name = baresip;
+			path = "../baresip-ios-master/baresip";
+			sourceTree = "<group>";
+		};
+		B026839E261B0CD900623403 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				B026839F261B0CD900623403 /* mock */,
+				B02683A0261B0CD900623403 /* sip */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		B026839F261B0CD900623403 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		B02683A0261B0CD900623403 /* sip */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sip;
+			sourceTree = "<group>";
+		};
+		B02683A1261B0CD900623403 /* debian */ = {
+			isa = PBXGroup;
+			children = (
+				B02683A2261B0CD900623403 /* source */,
+			);
+			path = debian;
+			sourceTree = "<group>";
+		};
+		B02683A2261B0CD900623403 /* source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		B02683A3261B0CD900623403 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B02683A4261B0CD900623403 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				B02683A5261B0CD900623403 /* examples */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		B02683A5261B0CD900623403 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		B02683A6261B0CD900623403 /* mk */ = {
+			isa = PBXGroup;
+			children = (
+				B02683A7261B0CD900623403 /* win32 */,
+			);
+			path = mk;
+			sourceTree = "<group>";
+		};
+		B02683A7261B0CD900623403 /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		B02683A8261B0CD900623403 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				B02683A9261B0CD900623403 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		B02683A9261B0CD900623403 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		B02683AA261B0CD900623403 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				B02683AB261B0CD900623403 /* vidinfo */,
+				B02683AC261B0CD900623403 /* dtls_srtp */,
+				B02683AD261B0CD900623403 /* l16 */,
+				B02683AE261B0CD900623403 /* amr */,
+				B02683AF261B0CD900623403 /* swscale */,
+				B02683B0261B0CD900623403 /* ausine */,
+				B02683B1261B0CD900623403 /* aptx */,
+				B02683B2261B0CD900623403 /* g726 */,
+				B02683B3261B0CD900623403 /* ctrl_dbus */,
+				B02683B4261B0CD900623403 /* snapshot */,
+				B02683B5261B0CD900623403 /* plc */,
+				B02683B6261B0CD900623403 /* g711 */,
+				B02683B7261B0CD900623403 /* contact */,
+				B02683B8261B0CD900623403 /* aac */,
+				B02683B9261B0CD900623403 /* opus_multistream */,
+				B02683BA261B0CD900623403 /* syslog */,
+				B02683BB261B0CD900623403 /* gst */,
+				B02683BC261B0CD900623403 /* v4l2_codec */,
+				B02683BD261B0CD900623403 /* echo */,
+				B02683BE261B0CD900623403 /* multicast */,
+				B02683BF261B0CD900623403 /* stun */,
+				B02683C0261B0CD900623403 /* opus */,
+				B02683C1261B0CD900623403 /* av1 */,
+				B02683C2261B0CD900623403 /* ctrl_tcp */,
+				B02683C4261B0CD900623403 /* rtcpsummary */,
+				B02683C5261B0CD900623403 /* avformat */,
+				B02683C6261B0CD900623403 /* mpa */,
+				B02683C7261B0CD900623403 /* vp9 */,
+				B02683C8261B0CD900623403 /* evdev */,
+				B02683C9261B0CD900623403 /* httpreq */,
+				B02683CA261B0CD900623403 /* mwi */,
+				B02683CB261B0CD900623403 /* sndio */,
+				B02683CC261B0CD900623403 /* opensles */,
+				B02683CD261B0CD900623403 /* vp8 */,
+				B02683CE261B0CD900623403 /* vumeter */,
+				B02683CF261B0CD900623403 /* ebuacip */,
+				B02683D0261B0CD900623403 /* rst */,
+				B02683D1261B0CD900623403 /* avfilter */,
+				B02683D2261B0CD900623403 /* aufile */,
+				B02683D3261B0CD900623403 /* ice */,
+				B02683D4261B0CD900623403 /* pulse */,
+				B02683D5261B0CD900623403 /* cairo */,
+				B02683D6261B0CD900623403 /* vidloop */,
+				B02683D7261B0CD900623403 /* zrtp */,
+				B02683D8261B0CD900623403 /* turn */,
+				B02683D9261B0CD900623403 /* serreg */,
+				B02683DA261B0CD900623403 /* g722 */,
+				B02683DB261B0CD900623403 /* g7221 */,
+				B02683DC261B0CD900623403 /* pcp */,
+				B02683DD261B0CD900623403 /* x11grab */,
+				B02683DE261B0CD900623403 /* aubridge */,
+				B02683DF261B0CD900623403 /* mixausrc */,
+				B02683E0261B0CD900623403 /* stdio */,
+				B02683E1261B0CD900623403 /* presence */,
+				B02683E2261B0CD900623403 /* auloop */,
+				B02683E3261B0CD900623403 /* omx */,
+				B02683E4261B0CD900623403 /* avcapture */,
+				B02683E5261B0CD900623403 /* httpd */,
+				B02683E6261B0CD900623403 /* sdl */,
+				B02683E7261B0CD900623403 /* fakevideo */,
+				B02683E8261B0CD900623403 /* codec2 */,
+				B02683E9261B0CD900623403 /* menu */,
+				B02683EA261B0CD900623403 /* oss */,
+				B02683EB261B0CD900623403 /* gsm */,
+				B02683EC261B0CD900623403 /* sndfile */,
+				B02683ED261B0CD900623403 /* directfb */,
+				B02683EE261B0CD900623403 /* jack */,
+				B02683EF261B0CD900623403 /* x11 */,
+				B02683F0261B0CD900623403 /* vidbridge */,
+				B02683F1261B0CD900623403 /* gtk */,
+				B02683F2261B0CD900623403 /* winwave */,
+				B02683F3261B0CD900623403 /* v4l2 */,
+				B02683F4261B0CD900623403 /* b2bua */,
+				B02683F5261B0CD900623403 /* alsa */,
+				B02683F6261B0CD900623403 /* i2s */,
+				B02683F7261B0CD900623403 /* portaudio */,
+				B02683F8261B0CD900623403 /* mqtt */,
+				B02683F9261B0CD900623403 /* avcodec */,
+				B02683FA261B0CD900623403 /* gzrtp */,
+				B02683FB261B0CD900623403 /* account */,
+				B02683FC261B0CD900623403 /* selfview */,
+				B02683FD261B0CD900623403 /* srtp */,
+				B02683FE261B0CD900623403 /* dshow */,
+				B02683FF261B0CD900623403 /* uuid */,
+				B0268400261B0CD900623403 /* wincons */,
+				B0268401261B0CD900623403 /* ilbc */,
+				B0268402261B0CD900623403 /* speex_pp */,
+				B0268403261B0CD900623403 /* cons */,
+				B0268404261B0CD900623403 /* natpmp */,
+				B0268405261B0CD900623403 /* webrtc_aec */,
+				B0268406261B0CD900623403 /* audiounit */,
+				B0268407261B0CD900623403 /* coreaudio */,
+				B0268408261B0CD900623403 /* debug_cmd */,
+				B0268409261B0CD900623403 /* gst_video */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		B02683AB261B0CD900623403 /* vidinfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vidinfo;
+			sourceTree = "<group>";
+		};
+		B02683AC261B0CD900623403 /* dtls_srtp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dtls_srtp;
+			sourceTree = "<group>";
+		};
+		B02683AD261B0CD900623403 /* l16 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = l16;
+			sourceTree = "<group>";
+		};
+		B02683AE261B0CD900623403 /* amr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = amr;
+			sourceTree = "<group>";
+		};
+		B02683AF261B0CD900623403 /* swscale */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = swscale;
+			sourceTree = "<group>";
+		};
+		B02683B0261B0CD900623403 /* ausine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ausine;
+			sourceTree = "<group>";
+		};
+		B02683B1261B0CD900623403 /* aptx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = aptx;
+			sourceTree = "<group>";
+		};
+		B02683B2261B0CD900623403 /* g726 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = g726;
+			sourceTree = "<group>";
+		};
+		B02683B3261B0CD900623403 /* ctrl_dbus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ctrl_dbus;
+			sourceTree = "<group>";
+		};
+		B02683B4261B0CD900623403 /* snapshot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = snapshot;
+			sourceTree = "<group>";
+		};
+		B02683B5261B0CD900623403 /* plc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = plc;
+			sourceTree = "<group>";
+		};
+		B02683B6261B0CD900623403 /* g711 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = g711;
+			sourceTree = "<group>";
+		};
+		B02683B7261B0CD900623403 /* contact */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = contact;
+			sourceTree = "<group>";
+		};
+		B02683B8261B0CD900623403 /* aac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = aac;
+			sourceTree = "<group>";
+		};
+		B02683B9261B0CD900623403 /* opus_multistream */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = opus_multistream;
+			sourceTree = "<group>";
+		};
+		B02683BA261B0CD900623403 /* syslog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = syslog;
+			sourceTree = "<group>";
+		};
+		B02683BB261B0CD900623403 /* gst */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gst;
+			sourceTree = "<group>";
+		};
+		B02683BC261B0CD900623403 /* v4l2_codec */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = v4l2_codec;
+			sourceTree = "<group>";
+		};
+		B02683BD261B0CD900623403 /* echo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = echo;
+			sourceTree = "<group>";
+		};
+		B02683BE261B0CD900623403 /* multicast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = multicast;
+			sourceTree = "<group>";
+		};
+		B02683BF261B0CD900623403 /* stun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stun;
+			sourceTree = "<group>";
+		};
+		B02683C0261B0CD900623403 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		B02683C1261B0CD900623403 /* av1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = av1;
+			sourceTree = "<group>";
+		};
+		B02683C2261B0CD900623403 /* ctrl_tcp */ = {
+			isa = PBXGroup;
+			children = (
+				B02683C3261B0CD900623403 /* netstring */,
+			);
+			path = ctrl_tcp;
+			sourceTree = "<group>";
+		};
+		B02683C3261B0CD900623403 /* netstring */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = netstring;
+			sourceTree = "<group>";
+		};
+		B02683C4261B0CD900623403 /* rtcpsummary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rtcpsummary;
+			sourceTree = "<group>";
+		};
+		B02683C5261B0CD900623403 /* avformat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = avformat;
+			sourceTree = "<group>";
+		};
+		B02683C6261B0CD900623403 /* mpa */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mpa;
+			sourceTree = "<group>";
+		};
+		B02683C7261B0CD900623403 /* vp9 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vp9;
+			sourceTree = "<group>";
+		};
+		B02683C8261B0CD900623403 /* evdev */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = evdev;
+			sourceTree = "<group>";
+		};
+		B02683C9261B0CD900623403 /* httpreq */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = httpreq;
+			sourceTree = "<group>";
+		};
+		B02683CA261B0CD900623403 /* mwi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mwi;
+			sourceTree = "<group>";
+		};
+		B02683CB261B0CD900623403 /* sndio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sndio;
+			sourceTree = "<group>";
+		};
+		B02683CC261B0CD900623403 /* opensles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = opensles;
+			sourceTree = "<group>";
+		};
+		B02683CD261B0CD900623403 /* vp8 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vp8;
+			sourceTree = "<group>";
+		};
+		B02683CE261B0CD900623403 /* vumeter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vumeter;
+			sourceTree = "<group>";
+		};
+		B02683CF261B0CD900623403 /* ebuacip */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ebuacip;
+			sourceTree = "<group>";
+		};
+		B02683D0261B0CD900623403 /* rst */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rst;
+			sourceTree = "<group>";
+		};
+		B02683D1261B0CD900623403 /* avfilter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = avfilter;
+			sourceTree = "<group>";
+		};
+		B02683D2261B0CD900623403 /* aufile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = aufile;
+			sourceTree = "<group>";
+		};
+		B02683D3261B0CD900623403 /* ice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ice;
+			sourceTree = "<group>";
+		};
+		B02683D4261B0CD900623403 /* pulse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pulse;
+			sourceTree = "<group>";
+		};
+		B02683D5261B0CD900623403 /* cairo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cairo;
+			sourceTree = "<group>";
+		};
+		B02683D6261B0CD900623403 /* vidloop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vidloop;
+			sourceTree = "<group>";
+		};
+		B02683D7261B0CD900623403 /* zrtp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = zrtp;
+			sourceTree = "<group>";
+		};
+		B02683D8261B0CD900623403 /* turn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = turn;
+			sourceTree = "<group>";
+		};
+		B02683D9261B0CD900623403 /* serreg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = serreg;
+			sourceTree = "<group>";
+		};
+		B02683DA261B0CD900623403 /* g722 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = g722;
+			sourceTree = "<group>";
+		};
+		B02683DB261B0CD900623403 /* g7221 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = g7221;
+			sourceTree = "<group>";
+		};
+		B02683DC261B0CD900623403 /* pcp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pcp;
+			sourceTree = "<group>";
+		};
+		B02683DD261B0CD900623403 /* x11grab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = x11grab;
+			sourceTree = "<group>";
+		};
+		B02683DE261B0CD900623403 /* aubridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = aubridge;
+			sourceTree = "<group>";
+		};
+		B02683DF261B0CD900623403 /* mixausrc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mixausrc;
+			sourceTree = "<group>";
+		};
+		B02683E0261B0CD900623403 /* stdio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stdio;
+			sourceTree = "<group>";
+		};
+		B02683E1261B0CD900623403 /* presence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presence;
+			sourceTree = "<group>";
+		};
+		B02683E2261B0CD900623403 /* auloop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = auloop;
+			sourceTree = "<group>";
+		};
+		B02683E3261B0CD900623403 /* omx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = omx;
+			sourceTree = "<group>";
+		};
+		B02683E4261B0CD900623403 /* avcapture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = avcapture;
+			sourceTree = "<group>";
+		};
+		B02683E5261B0CD900623403 /* httpd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = httpd;
+			sourceTree = "<group>";
+		};
+		B02683E6261B0CD900623403 /* sdl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sdl;
+			sourceTree = "<group>";
+		};
+		B02683E7261B0CD900623403 /* fakevideo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fakevideo;
+			sourceTree = "<group>";
+		};
+		B02683E8261B0CD900623403 /* codec2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = codec2;
+			sourceTree = "<group>";
+		};
+		B02683E9261B0CD900623403 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		B02683EA261B0CD900623403 /* oss */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = oss;
+			sourceTree = "<group>";
+		};
+		B02683EB261B0CD900623403 /* gsm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gsm;
+			sourceTree = "<group>";
+		};
+		B02683EC261B0CD900623403 /* sndfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sndfile;
+			sourceTree = "<group>";
+		};
+		B02683ED261B0CD900623403 /* directfb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = directfb;
+			sourceTree = "<group>";
+		};
+		B02683EE261B0CD900623403 /* jack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = jack;
+			sourceTree = "<group>";
+		};
+		B02683EF261B0CD900623403 /* x11 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = x11;
+			sourceTree = "<group>";
+		};
+		B02683F0261B0CD900623403 /* vidbridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vidbridge;
+			sourceTree = "<group>";
+		};
+		B02683F1261B0CD900623403 /* gtk */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gtk;
+			sourceTree = "<group>";
+		};
+		B02683F2261B0CD900623403 /* winwave */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = winwave;
+			sourceTree = "<group>";
+		};
+		B02683F3261B0CD900623403 /* v4l2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = v4l2;
+			sourceTree = "<group>";
+		};
+		B02683F4261B0CD900623403 /* b2bua */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = b2bua;
+			sourceTree = "<group>";
+		};
+		B02683F5261B0CD900623403 /* alsa */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = alsa;
+			sourceTree = "<group>";
+		};
+		B02683F6261B0CD900623403 /* i2s */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = i2s;
+			sourceTree = "<group>";
+		};
+		B02683F7261B0CD900623403 /* portaudio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = portaudio;
+			sourceTree = "<group>";
+		};
+		B02683F8261B0CD900623403 /* mqtt */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mqtt;
+			sourceTree = "<group>";
+		};
+		B02683F9261B0CD900623403 /* avcodec */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = avcodec;
+			sourceTree = "<group>";
+		};
+		B02683FA261B0CD900623403 /* gzrtp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gzrtp;
+			sourceTree = "<group>";
+		};
+		B02683FB261B0CD900623403 /* account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		B02683FC261B0CD900623403 /* selfview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = selfview;
+			sourceTree = "<group>";
+		};
+		B02683FD261B0CD900623403 /* srtp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = srtp;
+			sourceTree = "<group>";
+		};
+		B02683FE261B0CD900623403 /* dshow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dshow;
+			sourceTree = "<group>";
+		};
+		B02683FF261B0CD900623403 /* uuid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = uuid;
+			sourceTree = "<group>";
+		};
+		B0268400261B0CD900623403 /* wincons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = wincons;
+			sourceTree = "<group>";
+		};
+		B0268401261B0CD900623403 /* ilbc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ilbc;
+			sourceTree = "<group>";
+		};
+		B0268402261B0CD900623403 /* speex_pp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = speex_pp;
+			sourceTree = "<group>";
+		};
+		B0268403261B0CD900623403 /* cons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cons;
+			sourceTree = "<group>";
+		};
+		B0268404261B0CD900623403 /* natpmp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = natpmp;
+			sourceTree = "<group>";
+		};
+		B0268405261B0CD900623403 /* webrtc_aec */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = webrtc_aec;
+			sourceTree = "<group>";
+		};
+		B0268406261B0CD900623403 /* audiounit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = audiounit;
+			sourceTree = "<group>";
+		};
+		B0268407261B0CD900623403 /* coreaudio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = coreaudio;
+			sourceTree = "<group>";
+		};
+		B0268408261B0CD900623403 /* debug_cmd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug_cmd;
+			sourceTree = "<group>";
+		};
+		B0268409261B0CD900623403 /* gst_video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gst_video;
+			sourceTree = "<group>";
+		};
+		B026840A261B0CD900623403 /* share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		B026840B261B0CD900623403 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B0ABF620264D11F300B9D84D /* armv7 */ = {
+			isa = PBXGroup;
+			children = (
+				B0ABF621264D11F300B9D84D /* libdecoder.a */,
+				B0ABF622264D11F300B9D84D /* libopenh264.a */,
+				B0ABF623264D11F300B9D84D /* libprocessing.a */,
+				B0ABF624264D11F300B9D84D /* libcommon.a */,
+				B0ABF625264D11F300B9D84D /* libencoder.a */,
+			);
+			name = armv7;
+			path = "../сборка openh264/armv7";
+			sourceTree = "<group>";
+		};
+		B0D45F4C26283DB600609B43 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B0D45F4D26283DB600609B43 /* librem.a */,
+				B0D45F4E26283DB600609B43 /* libbaresip.a */,
+				B0D45F4F26283DB600609B43 /* libre.a */,
+			);
+			name = lib;
+			path = contrib/fat/lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0267A36261AFA3400623403 /* BarSipTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0267A4B261AFA3900623403 /* Build configuration list for PBXNativeTarget "BarSipTest" */;
+			buildPhases = (
+				2560318A829D4F02C73D9619 /* [CP] Check Pods Manifest.lock */,
+				B0267A33261AFA3400623403 /* Sources */,
+				B0267A34261AFA3400623403 /* Frameworks */,
+				B0267A35261AFA3400623403 /* Resources */,
+				5E86E76560D5A25255361347 /* [CP] Embed Pods Frameworks */,
+				B0CE7F1F2652953000230476 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarSipTest;
+			productName = BarSipTest;
+			productReference = B0267A37261AFA3400623403 /* BarSipTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0267A2F261AFA3400623403 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B0267A36261AFA3400623403 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = B0267A32261AFA3400623403 /* Build configuration list for PBXProject "BarSipTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0267A2E261AFA3400623403;
+			productRefGroup = B0267A38261AFA3400623403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0267A36261AFA3400623403 /* BarSipTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0267A35261AFA3400623403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0267A47261AFA3900623403 /* LaunchScreen.storyboard in Resources */,
+				B0267A44261AFA3900623403 /* Assets.xcassets in Resources */,
+				B0267A42261AFA3500623403 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2560318A829D4F02C73D9619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarSipTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E86E76560D5A25255361347 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarSipTest/Pods-BarSipTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarSipTest/Pods-BarSipTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarSipTest/Pods-BarSipTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0267A33261AFA3400623403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0267A3F261AFA3500623403 /* ViewController.swift in Sources */,
+				B0D44534261B360F00609B43 /* MytestFile.m in Sources */,
+				B0267A3B261AFA3500623403 /* AppDelegate.swift in Sources */,
+				B0267A3D261AFA3500623403 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0267A40261AFA3500623403 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0267A41261AFA3500623403 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0267A45261AFA3900623403 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0267A46261AFA3900623403 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0267A49261AFA3900623403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/baresip/include",
+					"$(PROJECT_DIR)/re/include",
+					"$(PROJECT_DIR)/rem/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/baresip",
+					"$(PROJECT_DIR)/contrib/armv7/lib",
+					"$(PROJECT_DIR)/contrib/fat/lib",
+					"$(PROJECT_DIR)/contrib/armv7s/lib",
+					"$(PROJECT_DIR)/contrib/aarch64/lib",
+					"$(PROJECT_DIR)/contrib/x86_64/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0267A4A261AFA3900623403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/baresip/include",
+					"$(PROJECT_DIR)/re/include",
+					"$(PROJECT_DIR)/rem/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/baresip",
+					"$(PROJECT_DIR)/contrib/armv7/lib",
+					"$(PROJECT_DIR)/contrib/fat/lib",
+					"$(PROJECT_DIR)/contrib/armv7s/lib",
+					"$(PROJECT_DIR)/contrib/aarch64/lib",
+					"$(PROJECT_DIR)/contrib/x86_64/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0267A4C261AFA3900623403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16905646BE8628F8C6F433AC /* Pods-BarSipTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BarSipTest/BarSipTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4WTFYUPXR;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/iOSH264Compression/iOSH264Compression.framework/Headers\"",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/baresip/include",
+					"$(PROJECT_DIR)/re/include",
+					"$(PROJECT_DIR)/rem/include",
+				);
+				INFOPLIST_FILE = BarSipTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/contrib/fat/lib",
+					"$(PROJECT_DIR)/contrib/armv7/lib",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/baresip",
+					"$(PROJECT_DIR)/contrib/armv7/lib",
+					"$(PROJECT_DIR)/contrib/fat/lib",
+					"$(PROJECT_DIR)/contrib/armv7s/lib",
+					"$(PROJECT_DIR)/contrib/aarch64/lib",
+					"$(PROJECT_DIR)/contrib/x86_64/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = As.SMDPhone.BarSipTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BarSipTest/BarSipTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		B0267A4D261AFA3900623403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3BA3244CFDFF37E618D764 /* Pods-BarSipTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BarSipTest/BarSipTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4WTFYUPXR;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/iOSH264Compression/iOSH264Compression.framework/Headers\"",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/baresip/include",
+					"$(PROJECT_DIR)/re/include",
+					"$(PROJECT_DIR)/rem/include",
+				);
+				INFOPLIST_FILE = BarSipTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/contrib/fat/lib",
+					"$(PROJECT_DIR)/contrib/armv7/lib",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/baresip",
+					"$(PROJECT_DIR)/contrib/armv7/lib",
+					"$(PROJECT_DIR)/contrib/fat/lib",
+					"$(PROJECT_DIR)/contrib/armv7s/lib",
+					"$(PROJECT_DIR)/contrib/aarch64/lib",
+					"$(PROJECT_DIR)/contrib/x86_64/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = As.SMDPhone.BarSipTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BarSipTest/BarSipTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0267A32261AFA3400623403 /* Build configuration list for PBXProject "BarSipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0267A49261AFA3900623403 /* Debug */,
+				B0267A4A261AFA3900623403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0267A4B261AFA3900623403 /* Build configuration list for PBXNativeTarget "BarSipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0267A4C261AFA3900623403 /* Debug */,
+				B0267A4D261AFA3900623403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0267A2F261AFA3400623403 /* Project object */;
+}

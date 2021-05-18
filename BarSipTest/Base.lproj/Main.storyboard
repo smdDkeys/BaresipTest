@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BarSipTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv3-rh-AlP">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="Позвонить"/>
+                                <connections>
+                                    <action selector="myBuutTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRD-Ht-JpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uei-Db-JiL">
+                                <rect key="frame" x="50" y="493" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.89019607840000003" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="he7-9G-h4b"/>
+                                </constraints>
+                                <state key="normal" title="Повесить трубку">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeConnectionButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4a-ng-HHc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-fK-zkm">
+                                <rect key="frame" x="50" y="353" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.89019607840000003" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Adf-ub-tKq"/>
+                                </constraints>
+                                <state key="normal" title="Ответить">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="answercallButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QvT-f0-jnp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqM-1e-ciN">
+                                <rect key="frame" x="50" y="302" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upA-wC-sCk">
+                                <rect key="frame" x="20" y="64" width="374" height="218"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbX-Hu-Gfg">
+                                <rect key="frame" x="20" y="563" width="374" height="279"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BqM-1e-ciN" secondAttribute="trailing" constant="50" id="0zX-v6-b3H"/>
+                            <constraint firstItem="uei-Db-JiL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="5U1-1B-KSf"/>
+                            <constraint firstItem="upA-wC-sCk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6V4-Cd-H8L"/>
+                            <constraint firstItem="Cma-fK-zkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="CdJ-Yg-AZy"/>
+                            <constraint firstItem="Cma-fK-zkm" firstAttribute="top" secondItem="BqM-1e-ciN" secondAttribute="bottom" constant="30" id="Ecw-0I-Qy3"/>
+                            <constraint firstItem="BqM-1e-ciN" firstAttribute="top" secondItem="upA-wC-sCk" secondAttribute="bottom" constant="20" id="M1X-jz-GNZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pbX-Hu-Gfg" secondAttribute="bottom" constant="20" id="PGQ-zs-jbh"/>
+                            <constraint firstItem="pbX-Hu-Gfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SpF-tb-QpH"/>
+                            <constraint firstItem="uei-Db-JiL" firstAttribute="top" secondItem="Gv3-rh-AlP" secondAttribute="bottom" constant="30" id="VDA-1c-2Xo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cma-fK-zkm" secondAttribute="trailing" constant="50" id="VWM-6n-kHr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbX-Hu-Gfg" secondAttribute="trailing" constant="20" id="Vsv-pl-2Jg"/>
+                            <constraint firstItem="BqM-1e-ciN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="aSf-Gx-WlS"/>
+                            <constraint firstItem="Gv3-rh-AlP" firstAttribute="top" secondItem="Cma-fK-zkm" secondAttribute="bottom" constant="30" id="b0q-hZ-9h1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="upA-wC-sCk" secondAttribute="trailing" constant="20" id="bE3-6o-KXm"/>
+                            <constraint firstItem="upA-wC-sCk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cAl-Gi-weg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uei-Db-JiL" secondAttribute="trailing" constant="50" id="kXQ-Ev-w2u"/>
+                            <constraint firstItem="Gv3-rh-AlP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w9v-Hn-IrH"/>
+                            <constraint firstItem="pbX-Hu-Gfg" firstAttribute="top" secondItem="uei-Db-JiL" secondAttribute="bottom" constant="20" id="xxx-nC-iTs"/>
+                            <constraint firstItem="Gv3-rh-AlP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y7J-YM-FhU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StateCallLabel" destination="BqM-1e-ciN" id="D2s-FH-ekJ"/>
+                        <outlet property="decodeView" destination="pbX-Hu-Gfg" id="2iM-vb-rZ9"/>
+                        <outlet property="viewMy" destination="upA-wC-sCk" id="SJn-pO-MQ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
