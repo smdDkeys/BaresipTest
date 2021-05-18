@@ -79,55 +79,12 @@ class ViewController: UIViewController {
         )
     }
     
-    func VideoSessionMy() {
-        /*let captureSession = AVCaptureSession()
-
-        // Find the default audio device.
-        guard let audioDevice = AVCaptureDevice.default(for: .video) else { return }
-
-        do {
-            // Wrap the audio device in a capture device input.
-            let audioInput = try AVCaptureDeviceInput(device: audioDevice)
-            // If the input can be added, add it to the session.
-            if captureSession.canAddInput(audioInput) {
-                captureSession.addInput(audioInput)
-            }
-        } catch {
-            // Configuration failed. Handle error.
-        }
-        
-        let previewLayer = AVCaptureVideoPreviewLayer()
-
-        // Connect the preview layer with the capturing session.
-        previewLayer.session = captureSession
-
-        // Add the preview layer into the view's layer hierarchy.
-        decodeView.layer.addSublayer(previewLayer)*/
-    }
-    
     func contentsOfDirectoryAtPath(path: String) -> [String]? {
         guard let paths = try? FileManager.default.contentsOfDirectory(atPath: path) else { return nil}
         return paths.map { aContent in (path as NSString).appendingPathComponent(aContent)}
     }
     
     func readFileConfig(path: String?) {
-        //let file = "file.txt" //this is the file. we will write to and read from it
-        /*let fileUrl = URL(string: path)
-
-        //if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-
-            //let fileURL = dir.appendingPathComponent(path)
-
-            print("------------------")
-            //reading
-            do {
-                let text2 = try String(contentsOf: fileUrl!/*fileURL*/, encoding: .utf8)
-                print(text2)
-            }
-            catch {/* error handling here */}
-            print("-------------------")*/
-        //}
-        
         if let filepath = path {
             print("-------------")
             do {
@@ -145,7 +102,6 @@ class ViewController: UIViewController {
     }
     
     func test() {
-        //VideoSessionMy()
         //var agent: OpaquePointer? = nil
         print(Date())
         guard libre_init() == 0 else { return }
@@ -489,64 +445,19 @@ class ViewController: UIViewController {
             print(Date())
             if event.rawValue == 1 {
                 print("регистрация прошла успешно")
-                //let incCall = "Регистраци прошла успешно"
-                //printIncomingCall(mess: incCall)
-                /*cFunction {
-                    let incCall = "Регистраци прошла успешно"
-                    self.printIncomingCall(mess: incCall)
-                }*/
-                //let mySelf = Unmanaged<ViewController>.fromOpaque().takeUnretainedValue()
-                //let incCall = "Регистраци прошла успешно"
-                //mySelf.printIncomingCall(mess: incCall)
-                /*DispatchQueue.main.async {
-                    print("callhandler")
-                    /*if let handler = SipClient.incommingCallHandler {
-                        handler(call)
-                    }*/
-                }*/
             }
             if event.rawValue == 6 {
                 print("callhandler")
-                /*DispatchQueue.main.async {
-                    print("callhandler")
-                    /*if let handler = SipClient.incommingCallHandler {
-                        handler(call)
-                    }*/
-                }*/
             }
             if event.rawValue == 10 {
                 print("Call Closed")
-                /*let mySelf = Unmanaged<ViewController>.fromOpaque(arg!).takeUnretainedValue()
-                let incCall = "звонок окончен"
-                mySelf.printIncomingCall(mess: incCall)*/
-                /*DispatchQueue.main.async {
-                    print("callEnded")
-                    if let handler = SipClient.callEnded {
-                        //re_cancel()
-                        handler()
-                    }
-                }*/
             }
             if event.rawValue == 9 {
-                print("Incoming Call")
-                //DispatchQueue.main.async {
+                //print("Incoming Call")
                 print("Входящий вызов!!!!!!!!!!!")
-                /*let mySelf = Unmanaged<ViewController>.fromOpaque(arg!).takeUnretainedValue()
-                let incCall = "У вас входящий вызов"
-                mySelf.printIncomingCall(mess: incCall)*/
-                //print(self.printIncomingCall())
-                    //self.IncCall = call
-                    /*if let handler = SipClient.callEnded {
-                        //re_cancel()
-                        handler()
-                    }*/
-                //}
             }
             if event.rawValue == 13 {
                 print("идет разговор")
-                /*let mySelf = Unmanaged<ViewController>.fromOpaque(prm!).takeUnretainedValue()
-                let incCall = "идет разговор"
-                mySelf.printIncomingCall(mess: incCall)*/
             }
             }, nil)
             
@@ -564,8 +475,6 @@ class ViewController: UIViewController {
         DispatchQueue.global(qos: .userInitiated).async {
             re_main(nil)
         }
-        //readFileConfig(path: myPath)
-        
     }
     
     func printIncomingCall(mess: String) {
@@ -575,7 +484,6 @@ class ViewController: UIViewController {
     @IBAction func closeConnectionButt(_ sender: Any) {
         self.close(agent: agent!)
         test()
-        //ua_answer(agent, nil, VIDMODE_OFF)
     }
     
     @IBAction func answercallButt(_ sender: Any) {
